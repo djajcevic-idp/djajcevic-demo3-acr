@@ -1,0 +1,15 @@
+#$schema: https://json.schemastore.org/catalog-info.json
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: djajcevic-demo3-acr
+  annotations:
+    argocd/app-name: djajcevic-demo3
+  tags:
+    - helm
+spec:
+  type: config-repo
+  lifecycle: development
+  owner: demo-team
+  dependsOn:
+    - component:default/djajcevic-demo3
